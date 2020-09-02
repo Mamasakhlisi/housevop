@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HouseVOP</title>
+    <!-- Main Style -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="nav">
+        <div class="wrapper">
+          <a href="/" class="logo">HouseVOP</a>
+          <ul class="nav__links">
+            <li class="nav__link"><a href="#">О комплексе</a></li>
+            <li class="nav__link"><a href="#">Район</a></li>
+            <li class="nav__link"><a href="#">Каталог квартир</a></li>
+            <li class="nav__link"><a href="#">Ипотека</a></li>
+            <li class="nav__link"><a href="#">Контакты</a></li>
+          </ul>
+          <button id="toggle" onclick="openNavbar()">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Header Hero -->
+      <div class="hero">
+        <div>
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <p>Жилой комплекс в историческом центре</p>
+              </div>
+              <div class="swiper-slide">
+                <p>Жилой комплекс в историческом центре</p>
+              </div>
+              <div class="swiper-slide">
+                <p>Жилой комплекс в историческом центре</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="scroll__down"
+          ><img src="./img/mouse.png" alt=""
+        /></a>
+        <div class="marks">
+          <a href="#"
+            ><i class="fas fa-map-marker-alt"></i> Наб. реки Фонтанки 10-15</a
+          >
+          <a href="tel:8 (812) 123-45-67"
+            ><i class="fas fa-phone"></i> 8 (812) 123-45-67</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Testimonials -->
+      <div class="testimonials">
+        <div class="testimonials__column">
+          <img src="img/Group_park.png" alt="Group_park" />
+          <h4>Рядом исторические парки и скверы</h4>
+        </div>
+
+        <div class="testimonials__column">
+          <img src="img/Group_building.png" alt="Group_building" />
+          <h4>Полностью обустроенный</h4>
+        </div>
+
+        <div class="testimonials__column">
+          <img src="img/Group_fountain.png" alt="Group_fountain" />
+          <h4>10 фонтанов на территории</h4>
+        </div>
+
+        <div class="testimonials__column">
+          <img src="img/Group_bicycle.png" alt="Group_bicycle" />
+          <h4>6 км велодорожек</h4>
+        </div>
+      </div>
+
+      <!-- Appartaments -->
+      <div class="appartaments">
+        <h3 class="appartaments__title">Наши квартиры</h3>
+        <div class="appartaments__container">
+          <div class="appartaments__content">
+            <img src="img/appartaments_rectangle.png" alt="" />
+            <h4>Лофт — 3 этажа</h4>
+          </div>
+          <div class="appartaments__content">
+            <img src="img/appartaments_rectangle2.png" alt="" />
+            <h4>Лофт — 2 этажа</h4>
+          </div>
+          <div class="appartaments__content">
+            <img src="img/appartaments_rectangle.png" alt="" />
+            <h4>Лофт — 3 этажа</h4>
+          </div>
+          <div class="appartaments__content">
+            <img src="img/appartaments_rectangle2.png" alt="" />
+            <h4>Лофт — 2 этажа</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta">
+        <div class="cta__wrapper">
+          <div class="cta__description">
+            <h4>Хотите посмотреть?</h4>
+            <p>
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+              на латинице с начала XVI века. В то время некий безымянный
+              печатник создал большую коллекцию размеров и форм шрифтов,
+              используя Lorem Ipsum для распечатки образцов.
+            </p>
+          </div>
+          <form class="cta__form">
+            <div class="form__group">
+              <input type="text" name="name" placeholder="Ваше имя" />
+            </div>
+            <div class="form__group">
+              <input type="text" name="phone" placeholder="Ваш телефон" />
+            </div>
+            <div class="form__group">
+              <p>
+                *Мы никому не передаем ваши данные. И не сохраняем ваш номер в
+                базу.
+              </p>
+            </div>
+            <div class="form__group">
+              <button type="submit">Посмотреть район</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Video -->
+      <div class="video">
+        <div class="video__frame">
+          <!-- If we have a video, insert a frame, In this case a img. -->
+          <img src="img/video.png" alt="" />
+          <button><i class="fas fa-play-circle"></i></button>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="map">
+        <div class="map__content">
+          <h4>Район на карте</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.1235477863784!2d30.339734021410425!3d59.944634651418404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696317353b89bb9%3A0x4a5baf20e1544c1b!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0YDQtdC60Lgg0KTQvtC90YLQsNC90LrQuCwgMTAsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRltGPLCAxOTExODc!5e0!3m2!1suk!2sua!4v1587762698202!5m2!1suk!2sua"
+            width="100%"
+            height="250"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+      </div>
+      <!-- Question -->
+      <div class="question">
+        <h4>Есть вопросы?</h4>
+        <div class="question__wrapper">
+          <form class="question__form">
+            <div class="form__group">
+              <p>
+                *Мы никому не передаем ваши данные. И не сохраняем ваш номер в
+                базу.
+              </p>
+            </div>
+            <div class="form__group">
+              <input type="text" name="name" placeholder="Ваше имя" />
+            </div>
+            <div class="form__group">
+              <input type="text" name="phone" placeholder="Ваш телефон" />
+            </div>
+            <div class="form__group">
+              <button type="submit">Посмотреть район</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="wrapper">
+        <div>
+          <a href="/" class="logo">HouseVOP</a>
+        </div>
+        <div class="footer__navigation">
+          <ul>
+            <li><a href="#">О комплексе</a></li>
+            <li><a href="#">Район</a></li>
+            <li><a href="#">Каталог квартир</a></li>
+            <li><a href="#">Ипотека</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__navigation">
+          <ul>
+            <li><a href="#">О комплексе</a></li>
+            <li><a href="#">Район</a></li>
+            <li><a href="#">Каталог квартир</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Ипотека</a></li>
+          </ul>
+        </div>
+        <div class="footer__navigation">
+          <ul>
+            <li><a href="#">Телефон: 8 (812) 123-45-67</a></li>
+            <li><a href="#">Адрес: Наб. реки Фонтанки 10-15</a></li>
+            <li><a href="#">E-mail: vip@housevip.ru</a></li>
+            <li><a href="#">Отдел продаж: 10:00 - 20:00</a></li>
+            <li>
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-vk"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <!-- Main -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
